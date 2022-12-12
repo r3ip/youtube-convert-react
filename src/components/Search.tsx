@@ -1,17 +1,20 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import toast, { Toaster } from 'react-hot-toast';
 
 function Search() {
-  return (
-      <Row>
-        <Col>1 of 3</Col>
-        <Col>
-        <Container> todo </Container>
-        </Col>
-        <Col>3 of 3</Col>
-      </Row>
-  );
+    const notify = () => toast.success('Here is your toast.');
+    return (
+        <Row>
+            <Col>1 of 3</Col>
+            <Col>
+                <Container className='pt-5'>
+                    <Button onClick={notify}>toast success!</Button>
+                    <Toaster />
+                </Container>
+            </Col>
+            <Col>3 of 3</Col>
+        </Row>
+    );
 }
 
 export default Search;

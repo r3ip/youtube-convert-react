@@ -1,8 +1,8 @@
-import { Container, Nav, Navbar,  } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import Search from './components/Search'
 
-function App() {
 
+function App() {
   return (
     <>
       <Navbar bg="primary" variant="dark">
